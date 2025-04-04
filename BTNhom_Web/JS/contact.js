@@ -1,16 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function(){
     const form = document.querySelector("form");
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
     const phoneInput = document.getElementById("phone");
     const messageInput = document.getElementById("message");
 
-    // Khi load trang, xóa dữ liệu cũ và reset form
-    localStorage.removeItem("contactForm");
-    form.reset();
-
     // Xử lý khi gửi form
-    form.addEventListener("submit", function(event) {
+    form.addEventListener("submit", (event) => {
         event.preventDefault();
 
         const name = nameInput.value.trim();
@@ -18,27 +14,28 @@ document.addEventListener('DOMContentLoaded', function() {
         const phone = phoneInput.value.trim();
         const message = messageInput.value.trim();
 
-        if (!validateEmail(email)) {
-            createNotification("Email không hợp lệ!", true);
+        if (!name || !message) {
+            showNotification("Vui lòng điền đầy đủ thông tin!", true);
             return;
         }
 
-        if (!validatePhone(phone)) {
-            createNotification("Số điện thoại không hợp lệ!", true);
+        if (!isValidEmail(email)) {
+            showNotification("Email không hợp lệ! Vui lòng dùng email Gmail.", true);
             return;
         }
 
-        if (name === "" || message === "") {
-            createNotification("Vui lòng điền đầy đủ thông tin!", true);
+        if (!isValidPhone(phone)) {
+            showNotification("Số điện thoại không hợp lệ! Cần đủ 10 số, bắt đầu bằng 0.", true);
             return;
         }
 
-        createNotification("Tin nhắn của bạn đã được gửi thành công!");
+        // Gửi thành công
+        showNotification("Tin nhắn của bạn đã được gửi thành công!");
         form.reset();
     });
 
-    // Hàm hiển thị thông báo
-    function createNotification(message, isError = false) {
+    // Hiển thị thông báo nổi
+    function showNotification(message, isError = false) {
         const log = document.createElement('div');
         log.textContent = message;
         log.style.position = 'fixed';
@@ -54,15 +51,14 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => log.remove(), 2500);
     }
 
-    // Kiểm tra email hợp lệ
-    function validateEmail(email) {
-        const re = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-        return re.test(email);
+    // Kiểm tra email (chỉ chấp nhận Gmail)
+    function isValidEmail(email) {
+        const pattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+        return pattern.test(email);
     }
 
-    // Kiểm tra số điện thoại hợp lệ
-    function validatePhone(phone) {
-        const re = /^0[0-9]{9}$/;
-        return re.test(phone);
+    // Kiểm tra số điện thoại Việt Nam bắt đầu bằng 0 và đủ 10 số
+    function isValidPhone(phone) {
+        return /^0\d{9}$/.test(phone);
     }
 });
