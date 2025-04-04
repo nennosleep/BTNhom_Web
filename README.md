@@ -17,7 +17,7 @@
 - Ngôn ngữ sử dụng: HTML, CSS, JavaScipt
 
 # Cách chạy:
-Mở login.html đăng nhập với:
+Mở [login.html] (http://127.0.0.1:5500/BTNhom_Web/login.html) đăng nhập với:
 - Tên đăng nhập: 3tstore
 - Mật khẩu: 3tstoremanthien
 - Nhấn Đăng nhập sẽ vào trang chính.
