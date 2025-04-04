@@ -1,0 +1,38 @@
+/* about.html */
+
+.about-section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo-img {
+    width: 350px;
+    height: 350px;
+}
+
+.about-text h3 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-text ul {
+    list-style-position: inside;
+    margin-bottom: 15px;
+}

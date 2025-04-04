@@ -1,0 +1,128 @@
+/* products.html */
+
+.products-section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.products-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    cursor: pointer; 
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.product-card.active img {
+    display: none; 
+}
+
+.product-card h3 {
+    padding: 0 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.rating {
+    padding: 0 10px;
+    color: #ffc107;
+    margin: 5px 0;
+}
+
+.price {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-weight: normal;
+    order: 2;
+}
+
+.discounted-price {
+    color: #e60000;
+    font-weight: bold;
+    order: 1;
+}
+
+.discount {
+    color: #008000;
+    font-size: 0.9em;
+    order: 3;
+}
+
+.buy-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.config {
+    display: none; 
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #000000;
+    z-index: 10;
+    overflow-y: auto; 
+}
+
+.config ul {
+    list-style-type: none;
+}
+
+.config li {
+    margin-bottom: 5px;
+}
+
+.product-card.active .config {
+    display: block; 
+}

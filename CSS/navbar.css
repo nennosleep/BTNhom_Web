@@ -1,0 +1,63 @@
+/* header và navigation dùng chung cho tất cả các trang */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #1a73e8;
+    font-size: 24px;
+}
+
+.logo a {
+    text-decoration: none; 
+}
+
+
+.search-container {
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-button {
+    padding: 8px 12px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #555;
+    text-decoration: none;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #1a73e8;
+}

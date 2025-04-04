@@ -1,0 +1,7 @@
+/* Kiểu chung cho body, áp dụng cho tất cả các trang */
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.5;
+    padding-top: 49px; 
+}
