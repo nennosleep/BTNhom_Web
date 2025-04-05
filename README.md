@@ -16,7 +16,7 @@
 
 - Ngôn ngữ sử dụng: HTML, CSS, JavaScipt
 
-# Cách chạy:
+# Hướng dẫn sử dụng:
 Mở login.html đăng nhập với:
 - Tên đăng nhập: 3tstore
 - Mật khẩu: 3tstoremanthien
