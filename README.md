@@ -24,6 +24,26 @@ Mở login.html đăng nhập với:
 
 ![image](https://github.com/user-attachments/assets/02115dac-391f-42a0-8e14-441f355cb151)
 
+# Trang chủ:
+![image](https://github.com/user-attachments/assets/77a343b9-d001-48ec-be69-14a2a72a182d)
+
+# Trang sản phẩm:
+![image](https://github.com/user-attachments/assets/32f4f7fb-4961-4206-bb60-1907263a6f6e)
+
+# Trang giới thiệu:
+![image](https://github.com/user-attachments/assets/e520b4d2-db15-4007-9c38-b068f46d4a8a)
+
+# Trang liên hệ:
+![image](https://github.com/user-attachments/assets/0341f3cf-261c-49b6-96b5-89dc161f40d6)
+
+# Trang giỏ hàng:
+![image](https://github.com/user-attachments/assets/6e0df23c-7e0f-4dcd-872d-a6139e8d84c6)
+
+
+
+
+
+
 
 
 
