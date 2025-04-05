@@ -1,5 +1,6 @@
 # Hướng dẫn sử dụng:
-Mở login.html đăng nhập với:
+1. Git clone code về.
+Mở login.html chạy Open With Live Server sau đó đăng nhập với:
 - Tên đăng nhập: 3tstore
 - Mật khẩu: 3tstoremanthien
 - Nhấn Đăng nhập sẽ vào trang chính.
