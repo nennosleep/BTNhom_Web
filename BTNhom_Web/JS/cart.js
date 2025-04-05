@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    
     const checkoutButton = document.querySelector('.checkout-button');
 
     if (checkoutButton) {
