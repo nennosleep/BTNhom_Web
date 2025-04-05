@@ -3,7 +3,7 @@ Mở login.html đăng nhập với:
 - Tên đăng nhập: 3tstore
 - Mật khẩu: 3tstoremanthien
 - Nhấn Đăng nhập sẽ vào trang chính.
-- 
+
 # Bài tập nhóm Lập trình Web
 - # Đề tài: Xây dựng trang chủ cho website bán hàng điện thoại 3TStore
 
